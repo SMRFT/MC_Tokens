@@ -1,0 +1,8 @@
+{
+    "aud": "LAB_MAC_01", 
+    "email": "LAB_MAC_01@shinova.in", 
+    "name": "LAB_MAC_01", 
+    "allowed-actions": ["MC-API-LAB-RW"], 
+    "allowed-data": ["BR001"],
+    "expiry-days": "30"
+}
