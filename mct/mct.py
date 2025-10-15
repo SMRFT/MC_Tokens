@@ -49,6 +49,7 @@ def createJwt(values: dict, expDays: int = EXPIRY_DURATION_DAYS) -> str:
             raise ValueError(f'Values does not contain {k} in the correct format', k)
 
     payload = values.copy()
+    payload.pop('expiry-days','')
     payload[ISSUER_KEY] = ISSUER_VALUE
 
     now = int(time.time())
